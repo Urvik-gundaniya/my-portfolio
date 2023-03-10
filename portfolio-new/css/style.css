@@ -1,0 +1,417 @@
+:root {
+    --head-color: #ffcc47;
+    --body-color: white;
+    --head-family: 'Montserrat', sans-serif;
+    --body-family: 'Poppins', sans-serif;
+}
+
+section {
+    margin-top: 90px;
+}
+
+body {
+    background-color: black;
+}
+
+/*--------------------------------------
+navbar
+------------------------------------------*/
+.navbar .nav-item .nav-link {
+    color: var(--body-color);
+    font-family: var(--body-family);
+    font-size: 18px;
+    padding: 12px 20px;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: var(--head-color);
+    text-decoration: underline;
+}
+
+.navbar .nav-item .nav.nav-link:active {
+    color: var(--head-color);
+    text-decoration: underline;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 30;
+}
+
+.navbar .navbar-brand img {
+    width: 17%;
+
+}
+
+/*------------------------------------------------------------
+home 
+--------------------------------------------------*/
+
+
+#home .home-intro {
+    color: white;
+}
+
+#home .col-md-6 img {
+    width: 90%;
+}
+
+.home-intro {
+    padding-left: 70px;
+}
+
+.home-intro h5 {
+    font-family: var(--head-family);
+    color: var(--head-color);
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.home-intro h1 {
+    font-family: var(--head-family);
+    color: var(--body-color);
+    font-size: 24px;
+    line-height: 46px;
+}
+
+.home-intro h1 span {
+    color: var(--head-color);
+    font-size: 78px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 60px;
+}
+
+/*--------------------------------------------------
+about
+-*-----------------------------------------------------*/
+
+#about .col-md-6 img {
+ width: 100%;
+}
+
+.heading-1 {
+    color: var(--body-color);
+    font-family: var(--head-family);
+    font-weight: 800;
+    font-size: 78px;
+    margin-bottom: 80px;
+    position: relative;
+    top: 0;
+}
+
+.heading-gradiant {
+    position: absolute;
+    top: 0px;
+    transform: translateX(-20px);
+    font-size: 116px;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    font-weight: 900;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+}
+
+#about .col-md-6 p {
+    color: gray;
+    font-family: var(--body-family);
+    font-size: 18px;
+}
+
+.about-ul-1 ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: var(--body-color);
+    font-family: var(--body-family);
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.about-ul-1 ul li {
+    padding-bottom: 15px;
+}
+
+
+.about-ul-1 ul li span {
+    list-style-type: none;
+    padding-left: 0;
+    color: gray;
+    font-family: var(--body-family);
+    font-size: 18px;
+}
+
+.cv-btn a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--head-color);
+    border-radius: 40px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 16px;
+}
+
+.cv-btn {
+    margin-top: 30px;
+}
+
+/*----------------------------------------------------
+Resume
+--------------------------------------------------------------------*/
+.resume-card {
+    padding: 50px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.resume-card h3 {
+    font-family: var(--head-family);
+    color: var(--head-color);
+    font-weight: 900;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.resume-card span {
+    font-size: 26px;
+    font-family: var(--body-family);
+    color: var(--body-color);
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.resume-card p {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: var(--body-family);
+    color: gray;
+}
+#resume .heading-gradiant{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*----------------------------------------------------
+projects
+--------------------------------------------------------------------*/
+
+#projects .col-md-8 img {
+    max-width: 100%;
+}
+#projects .col-md-8 iframe{
+  width: 100%;
+  height: 400px;
+}
+#projects .col-md-8 {
+    position: relative;
+}
+
+#projects .col-md-8:hover a {
+    visibility: visible;
+}
+#projects .heading-gradiant{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#projects .col-md-8 a {
+    height: 100%;
+    width: calc(100% - 23px);
+    color: black;
+    font-family: var(--body-family);
+    background-color: rgba(255, 204, 71, 0.9);
+    text-decoration: none;
+    position: absolute;
+    top: 0%;
+    padding-top: 150px;
+    text-align: center;
+    visibility: hidden;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+
+}
+
+#projects .col-md-4 h1 a {
+    text-decoration: none;
+    color: var(--body-color);
+    font-family: var(--head-family);
+    padding-left: 30px;
+}
+
+#projects .col-md-4 p {
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: var(--body-family);
+    color: gray;
+
+}
+
+/*----------------------------------------------------
+contact
+--------------------------------------------------------------------*/
+
+.contact-social ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center !important;
+}
+#contact .heading-gradiant{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-social ul li i {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffbd39;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.contact-social ul li h2 {
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--body-color);
+    font-family: var(--head-family);
+    margin-top: 30px;
+}
+
+.contact-social ul li p {
+    color: var(--body-color);
+    font-family: var(--body-family);
+    font-size: 14px;
+}
+
+.contact-social ul li a {
+    text-decoration: none;
+    color: var(--body-color);
+    font-family: var(--body-family);
+    font-size: 14px;
+}
+footer p{
+    font-family: var(--body-family);
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    margin: 40px 0;
+}
+
+@media(max-width:1140px) {
+    .navbar .navbar-brand img {
+        width: 30%;
+    }
+
+    .navbar .navbar-brand {
+        width: 70%;
+    }
+}
+@media(max-width:992px){
+    .navbar-toggler {
+        background-color: var(--body-color);
+    }
+    button[aria-expanded="false"]{
+        padding: 10px;
+    }
+    button[aria-expanded="true"]{
+        padding: 10px;
+        transform: rotate(90deg);
+    }
+    .navbar-toggler.d-lg-none {
+        background-color: var(--body-color);
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media(max-width:768px) {    
+    #home{
+        margin-top: 130px;
+    }
+    .home-intro h1 span{
+        font-size: 52px;
+       
+    }
+    #home .col-md-6 img {
+        width: 90%;
+        float: right;
+    }
+    .home-intro{
+        padding-left: 20px;
+    }
+    .heading-1{
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    .heading-gradiant{
+        font-size: 98px;
+    } 
+    #projects .col-md-4 p{
+        padding-left: 10px;
+    }
+    #projects .col-md-4 h1 a{
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    #projects .col-md-8 iframe{
+        height: 220px;
+
+      }
+}
+@media(max-width:576px){
+    #home .col-md-6 img {
+        width: 60%;
+        float: none;
+        padding-top: 30px;
+    }
+    #about .col-md-6 img {
+        width: 80%;
+    }
+    #about .heading-gradiant{
+        left: 50%;
+    transform: translateX(-50%);
+    } 
+    
+}
+@media(max-width:420px){
+    .heading-gradiant{
+        font-size: 72px;
+    } 
+    .navbar .navbar-brand img {
+        width: 40%;
+    }
+    #projects .col-md-8 a{
+        display: none;
+    }
+}
+@media(max-width:320px){
+    .heading-1 {
+        font-size: 46px;
+    }
+    .heading-gradiant{
+        font-size: 56px;
+    } 
+    .home-intro h1 span{
+        font-size: 42px;
+    }
+}
